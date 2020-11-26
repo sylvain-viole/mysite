@@ -1,0 +1,658 @@
+// VARIABLES
+
+$bright: rgb(255, 255, 255);
+$dark--transparent: rgba(0, 0, 0, 0.072);
+$dark--mid-transparent: opacify($dark--transparent, 0.2);
+$dark: opacify($dark--transparent, 1);
+$less-dark: lighten($dark, 10%);
+$primary: rgb(255, 166, 0);
+
+
+$bg-nav: linear-gradient(90deg, $dark--transparent, rgba(255, 0, 0, 0));
+$linear-showroom: linear-gradient(rgba(255, 255, 255, 0.938),rgba(238, 238, 238, 0.897) );
+
+// MIXIN
+
+@mixin box {
+  border-radius: 4px;
+  border: 1px solid $dark--transparent;
+  box-shadow: 0px 0px 10px 2px $dark--transparent;
+}
+
+@mixin box-big {
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+}
+
+@mixin box-no {
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+}
+
+@mixin hover {
+  background-color: $dark--transparent;
+  @include box;
+  border-radius: 30px;
+}
+
+
+// UTILITY
+
+.hidden {
+  display: none !important 
+}
+
+.big {
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+// *
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: $dark;
+}
+
+// init
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#mask {
+  transition: all 3s;
+}
+
+.opaq {
+  opacity: 0;
+}
+
+// BODY
+
+body {
+  display : flex;
+  justify-content: center;
+  background-color: $bright;
+  scroll-behavior: smooth; 
+}
+
+// CONTAINER
+
+.container {
+  display : flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  width: 95vw;
+
+  @include box;
+}
+
+// HEADER
+
+header {
+  margin: 10px auto;
+  width: 100%;
+  background-color: $primary;
+}
+
+header p {
+  margin: auto 10px;
+}
+
+// NAVBAR
+
+.navbar__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__menu {
+  max-height: 3rem;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.450s ease-out;
+}
+
+.navbar__list {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.navbar__toggler-icon {
+  padding: 0.8rem 1.3rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+#menu__icon {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: $dark;
+  @include box-big();
+  transition: all 0.450s ease-out;
+}
+
+.rotate{
+
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+
+.navbar__item {
+  font-size: 1rem;
+  display : flex;
+  padding: 0.8rem;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0);
+  align-items: center;
+  text-align: center;
+  transition: all 1s;
+}
+
+.navbar__item:hover {
+  @include hover;
+}
+
+
+// MAIN
+
+section {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  margin: auto;
+  
+  padding: 15px;
+}
+
+// SHOWROOM
+
+#showroom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+
+  h2  {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    background-color: $dark;
+    color: $bright;
+  }
+
+  .description, .details {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+    text-shadow: 10px 2px 4px rgba(128, 128, 128, 0.185);
+  }
+
+  .center {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0 0.4rem;
+  }
+  
+  .side {
+    height: 100%;
+    width: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #prev__showroom {
+    text-align: left;
+  }
+  #next__showroom {
+    text-align: right;
+  }
+}
+
+.project {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include box-big();
+  margin: 1rem 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.description__project {
+  padding-left: 0.3rem;
+  flex-grow: 1;
+}
+
+.button__container {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+  button {
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    outline-style: none;
+    background-color: rgba(255, 255, 255, 0.685);
+
+  }
+
+}
+
+#project1 {
+  display: flex;
+  background-image: $linear-showroom, url('../images/project1__img.png');
+}
+#project2 {
+  display: flex;
+  background-image: $linear-showroom, url('../images/project2__img.png');
+}
+#project3 {
+  display: flex;
+  background-image: $linear-showroom, url('../images/project3__img.png');
+}
+
+
+
+// FOOTER
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+// ELEMENT STYLES
+
+a {
+  text-decoration: none;
+}
+
+.anchor { 
+  display: block; 
+  position: relative; 
+  top: -250px; 
+  visibility: hidden;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3.4rem;
+  padding-bottom: 1rem;
+  animation-name: shadow-anim;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-duration: 6s;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  text-shadow: $text-shadow-soft;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+
+strong {
+  font-size: 1rem;
+}
+
+button {
+  color: $dark;
+  font-size: 0.8rem;
+  background-color: $bright;
+  padding: 0.5rem;
+  border-style: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  outline-style: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 1s;
+  @include box-big();
+
+}
+
+button:hover {
+    @include hover;
+  }
+
+
+button.arrow {
+  transition: all 1s;
+
+
+}
+
+
+// CLASS STYLES
+
+.subtitle {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  animation-name: shadow-anim;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-duration: 6s;
+}
+
+.top__link {
+  display : flex;
+  justify-content: center;
+}
+
+.focus {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: $bright;
+  color: $dark;
+  font-size: 1rem;
+  @include box-big;
+}
+
+.logo__contact {
+  display : flex;
+  justify-content: space-around;
+}
+
+.project__a {
+  padding-bottom: 2rem;
+}
+
+.project__b {
+  text-align: right;
+  padding-bottom: 2rem;
+}
+
+
+
+.contact__container {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.anim-d-1 {
+  animation-delay: 1s;
+}
+
+.anim-d-2 {
+  animation-delay: 2s;
+}
+
+// PICTURES
+
+.img__front-logo {
+  display: none;
+  float: left;
+  width: 15vw;
+  padding: 2px;
+  margin-right: 1em;
+  
+  @include box;
+}
+
+.img__logo-contact {
+  width: 3rem;
+  padding: 2px;
+  margin-right: 1em;
+  opacity: 75%;
+}
+
+#portfolio img {
+  border-style: none;
+  width: 14rem;
+  @include box();
+
+}
+
+// ANIMATION
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-11-24 18:44:13
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-11-24 18:44:35
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+// MEDIA QUERIES
+
+// PORTFOLIO > 550 px
+
+@media screen and (min-width: 550px) {
+
+  #showroom {
+    height: 12rem;
+    width: 80%;
+    margin: auto;
+    @include box-big();
+
+      h2 {
+        @include box-big();
+      }
+  }
+
+
+  .project {
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .project1 {
+    background-image: $linear-showroom, url('../images/project1__img.png');
+  }
+  .project2 {
+    background-image: $linear-showroom, url('../images/project2__img.png');
+  }
+  .project3 {
+    background-image: $linear-showroom, url('../images/project3__img.png');
+  }
+  
+#project1,
+#project2,
+#project3 {
+  background-image: none;
+}
+
+
+  .side {
+    display: flex !important;
+  }
+
+  .center {
+    flex-direction: row;
+    padding: 0;
+  }
+
+}
+
+// DESKTOP
+@media screen and (min-width: 800px) {
+   
+  * {
+    font-size: 22px;
+  }
+
+  main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .anchor { 
+  top: -30px; 
+}
+
+  #showroom {
+    height: 18rem;
+  }
+  
+  .navbar__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .navbar__toggler-icon {
+    display: none;
+  }
+  
+  .navbar__menu {
+    height: 3rem;
+    max-height: 3rem;
+  }
+
+}
+
+
+
+// BIG SCREEN
+@media screen and (min-width: 1078px) {
+  * {
+    font-size: 24px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  #showroom {
+    width: 75%;
+    margin: auto;
+  }
+
+  .navbar__container {
+    height: 60px;
+  }
+
+  .img__front-logo {
+    width: 200px;
+  }
+
+  .img__logo-contact {
+    width: 80px;
+  }
+}
