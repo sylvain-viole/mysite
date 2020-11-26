@@ -14,12 +14,12 @@ $(document).ready(() => {
       setTimeout(() => {
         $("#menu__icon").addClass("rotate");
       }, 30);
-      $(".navbar__menu").css("max-height", "16rem");
+      $(".navbar__collapsed-content").css("max-height", "16rem");
       menuClosed = false;
     } else {
       $("#menu__icon").addClass("bounce");
       $("#menu__icon").removeClass("rotate");
-      $(".navbar__menu").css("max-height", "3rem");
+      $(".navbar__collapsed-content").css("max-height", "2rem");
       menuClosed = true;
     }
   });
@@ -28,7 +28,7 @@ $(document).ready(() => {
   $(".navbar__item").on("click", (e) => {
       $("#menu__icon").addClass("bounce");
       $("#menu__icon").removeClass("rotate");
-      $(".navbar__menu").css("max-height", "3rem");
+      $(".navbar__collapsed-content").css("max-height", "2rem");
       menuClosed = true;
   });
 

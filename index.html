@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -64,42 +64,38 @@
   <body>
     <div class="container contrast">
       <header>
-        <div id="header__left" class="header__inner">
+        <div id="header__title" class="header__inner">
           <h1>My name is Sylvain,</h1>
           <h2>I dig code.</h2>
         </div>
-        <div id="header__right" class="header__inner">
-          <nav class="navbar" role="navigation">
-            <div class="navbar__container">
-              <div class="navbar__menu">
-                <ul class="navbar__list">
-                  <div class="navbar__toggler-icon">
-                    <div id="menu__icon" class="bounce"></div>
-                  </div>
-                  <a href="#who__anchor"
-                    ><li class="navbar__item">Who I am</li></a
-                  >
-                  <a href="#what__anchor"
-                    ><li class="navbar__item">What I do</li></a
-                  >
-                  <a href="#need__anchor"
-                    ><li class="navbar__item">What I am looking for</li></a
-                  >
-                  <a href="https://github.com/sylvavio" target="_blank"
-                    ><li class="navbar__item">
-                      <img
-                        class="img__logo"
-                        src="./images/logo-github.png"
-                        alt=""
-                        srcset=""
-                      /></li
-                  ></a>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
       </header>
+    </div>
+    <div class="container contrast">
+      <nav class="navbar" role="navigation">
+          <div class="navbar__collapsed-content">
+            <ul class="navbar__list">
+              <div class="navbar__toggler-icon">
+                <div id="menu__icon" class="bounce"></div>
+              </div>
+              <a href="#who__anchor"><li class="navbar__item">Who I am</li></a>
+              <a href="#what__anchor"
+                ><li class="navbar__item">What I do</li></a
+              >
+              <a href="#need__anchor"
+                ><li class="navbar__item">What I am looking for</li></a
+              >
+              <a href="https://github.com/sylvavio" target="_blank"
+                ><li class="navbar__item">
+                  <img
+                    class="img__logo"
+                    src="./images/logo-github.png"
+                    alt=""
+                    srcset=""
+                  /></li
+              ></a>
+            </ul>
+          </div>
+      </nav>
     </div>
     <main>
       <div class="container primary">
