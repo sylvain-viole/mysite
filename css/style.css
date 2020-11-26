@@ -321,7 +321,7 @@ header {
 .contact__container {
   margin: auto;
   display: flex;
-  width: 40%;
+  width: 95%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -409,6 +409,15 @@ header {
   .center {
     flex-direction: row;
     padding: 0;
+  }
+  .contact__container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contact__container {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */
