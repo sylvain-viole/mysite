@@ -10,22 +10,24 @@ $(document).ready(() => {
   let menuClosed = true;
   $(".navbar__toggler-icon").on("click", (e) => {
     if (menuClosed) {
-      $("#menu__icon").addClass("rotate");
-      $("#menu__icon").css("background-color", "white");
+      $("#menu__icon").removeClass("bounce");
+      setTimeout(() => {
+        $("#menu__icon").addClass("rotate");
+      }, 30);
       $(".navbar__menu").css("max-height", "16rem");
       menuClosed = false;
     } else {
+      $("#menu__icon").addClass("bounce");
       $("#menu__icon").removeClass("rotate");
-      $("#menu__icon").css("background-color", "");
       $(".navbar__menu").css("max-height", "3rem");
       menuClosed = true;
     }
   });
 
-  // Remove behaviour when navbar is not collapsed anymore
+  // Closes menu when menu item is clicked
   $(".navbar__item").on("click", (e) => {
+      $("#menu__icon").addClass("bounce");
       $("#menu__icon").removeClass("rotate");
-      $("#menu__icon").css("background-color", "");
       $(".navbar__menu").css("max-height", "3rem");
       menuClosed = true;
   });

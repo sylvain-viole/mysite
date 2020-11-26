@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/new_style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Sylvain Viole, Developer</title>
 
@@ -65,8 +65,8 @@
     <div class="container contrast">
       <header>
         <div id="header__left" class="header__inner">
-          <h1>My name is Sylvain</h1>
-          <h2>I am learning code</h2>
+          <h1>My name is Sylvain,</h1>
+          <h2>I dig code.</h2>
         </div>
         <div id="header__right" class="header__inner">
           <nav class="navbar" role="navigation">
@@ -74,20 +74,26 @@
               <div class="navbar__menu">
                 <ul class="navbar__list">
                   <div class="navbar__toggler-icon">
-                    <div id="menu__icon"></div>
+                    <div id="menu__icon" class="bounce"></div>
                   </div>
-                  <a href="#learn__anchor"
-                    ><li class="navbar__item">What I learn</li></a
-                  >
-                  <a href="#do__anchor"
-                    ><li class="navbar__item">What I do</li></a
-                  >
                   <a href="#who__anchor"
                     ><li class="navbar__item">Who I am</li></a
                   >
-                  <a href="#contact__anchor"
-                    ><li class="navbar__item">Get in Touch</li></a
+                  <a href="#what__anchor"
+                    ><li class="navbar__item">What I do</li></a
                   >
+                  <a href="#need__anchor"
+                    ><li class="navbar__item">What I am looking for</li></a
+                  >
+                  <a href="https://github.com/sylvavio" target="_blank"
+                    ><li class="navbar__item">
+                      <img
+                        class="img__logo"
+                        src="./images/logo-github.png"
+                        alt=""
+                        srcset=""
+                      /></li
+                  ></a>
                 </ul>
               </div>
             </div>
@@ -97,34 +103,69 @@
     </div>
     <main>
       <div class="container primary">
-        <span id="learn__anchor"  class="anchor"></span>
-        <section id="learn" class="primary">
-          <h2>#What I learn</h2>
+        <span id="who__anchor" class="anchor"></span>
+        <section id="who" class="primary">
+          <h2>#Who I am</h2>
+          <p>I am a developer in the making, creative and code passionate.</p>
           <p>
-            I am a developer in the making with a slightly inclination for
-            back-end programming. My cursus has begun late september 2020 at
-            Studi.
+            I've taken a deep dive in web developpement since september 2020
+            when I started a
+            <a
+              href="https://www.studi.fr/formation/code-developpement/graduate-developpeur-php-symfony"
+              target="_blank"
+              rel="noopener noreferrer"
+              >fullstack graduate with PHP/Symphony option</a
+            >. <br />
           </p>
+
           <p>
-            <strong>Frontend</strong> : HTML5, CSS 3, SASS, JS, BOOTSTRAP 4, JS,
-            JQuery, Ajax, React.js, Wordpress.
+            I also am a 39 years old ex-senior lighting designer, dad and
+            husband, living in Bordeaux, France.
           </p>
-          <p>
-            <strong>Backend</strong> : MySQL, PHP, Symfony, Node.js, MongoDB,
-            React Native, Redux, UML, API REST...
-          </p>
-          <a
-            href="https://www.studi.fr/formation/code-developpement/graduate-developpeur-php-symfony"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><button class="button">All the details here...</button></a
-          >
+          <p>I love stupid jokes, as well as playing the piano.</p>
+          <p>I hate it when my house is not tidy and clean.</p>
         </section>
       </div>
-      <span id="do__anchor"  class="anchor"></span>
+      <!-- TOP LINK -->
+      <div class="top__link">
+        <a href="#">
+          <button class="arrow">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-chevron-double-up"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+              />
+            </svg></button
+        ></a>
+      </div>
+      <!-- EO TOP LINK -->
       <div class="container primary">
+        <span id="what__anchor" class="anchor"></span>
         <section id="do">
           <h2>#What I Do</h2>
+          <p>
+            <strong>I can :</strong> HTML, CSS, SAAS, Bootstrap, Tailwind, JS,
+            NPM, JQuery, GIT, CLI, VSC.<br />
+            <strong> I will : </strong>Node, Express, PHP, Symphony, React, ...
+            <br />
+            <small>(This list gets regular updates)</small>
+          </p>
+          <p>
+            I am eager to create things, so I find it very important to develop
+            projects in the meantime of my graduate.
+          </p>
+          <p>Here is a presentation of these learn-by-doing projects :</p>
           <div id="showroom" class="project1">
             <div id="prev__showroom" class="side">&lt;</div>
             <div class="center">
@@ -133,7 +174,7 @@
                   <h2>#1 : CTA</h2>
                 </div>
                 <div class="description__project">
-                  <p class="description">Responsive, static, example.</p>
+                  <p class="description">Responsive, static landing-page</p>
                   <p class="details">HTML, CSS.</p>
                 </div>
                 <div class="button__container">
@@ -194,39 +235,94 @@
             </div>
             <div id="next__showroom" class="side">&gt;</div>
           </div>
+          <p>
+            You can also checkout my
+            <a href="https://github.com/sylvavio" target="_blank">GITHUB</a>
+            where I follow and push projects.
+          </p>
         </section>
       </div>
-      <span id="who__anchor"  class="anchor"></span>
-      <div class="container primary">
-        <section id="Who">
-          <h2>#Who I am</h2>
-          <p>I am a 39 years old senior lighting designer, dad and husband.</p>
-          <p>I live in Bordeaux, France.</p>
-          <p>I love stupid jokes, as well as playing the piano.</p>
-          <p>I hate it when my house is not tidy and clean.</p>
-        </section>
+      <!-- TOP LINK -->
+      <div class="top__link">
+        <a href="#">
+          <button class="arrow">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-chevron-double-up"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+              />
+            </svg></button
+        ></a>
       </div>
+      <!-- EO TOP LINK -->
       <div class="container primary">
-        <!-- CONTACT -->
-        <span id="contact__anchor" class="anchor"></span>
-        <section id="contact">
-          <h2>#Contact</h2>
+        <span class="anchor" id="need__anchor"></span>
+        <section id="need">
+          <h2># What I am looking for</h2>
+          <p>
+            As I am making my way in web developement, following courses and
+            creating things, my final aspiration is to get a real life job out
+            of it.
+          </p>
+          <p>
+            So first things first, I am right now looking for an
+            <mark> internship in a web company</mark>.
+          </p>
+          <p>You can contact me :</p>
           <div class="contact__container">
-            <a href="mailto:sylvavio@gmail.com">
+            <p>
+              <strong>Sylvain Viole</strong>
+              <br />
+              2 rue Ferbos, 33800 Bordeaux
+              <br />
+              +336 64 97 33 24
+              <br />
+              <a href="mailto:sylvavio@gmail.com">sylvavio@gmail.com</a>
+            </p>
+            <a href="https://github.com/sylvavio" target="_blank">
               <img
-                class="img__logo-contact"
-                src="./images/logo-email.png"
-                alt="email"
-              /> </a
-            ><a href="https://github.com/sylvavio" target="_blank">
-              <img
-                class="img__logo-contact"
+                class="img__logo"
                 src="./images/logo-github.png"
                 alt="gitHub-logo"
               />
             </a>
           </div>
         </section>
+        <!-- TOP LINK -->
+        <div class="top__link">
+          <a href="#">
+            <button class="arrow">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-chevron-double-up"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                />
+              </svg></button
+          ></a>
+        </div>
+        <!-- EO TOP LINK -->
       </div>
     </main>
     <div class="container contrast">
