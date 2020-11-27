@@ -126,6 +126,7 @@ footer {
 }
 
 .img__logo {
+  margin: 0.5rem;
   width: 2rem;
 }
 
@@ -316,6 +317,8 @@ nav {
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
+  padding-top: 1rem;
+  overflow: hidden;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
 }
 
