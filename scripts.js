@@ -32,25 +32,6 @@ $(document).ready(() => {
       menuClosed = true;
   });
 
-  // SHOWROOM
-  const breakPoint = 550; /* This value has to be the same as CSS media queries */
-  // Resets CSS display of PROJECTS depending on responsive
-  // Checks screen width onload :
-  window.onload = () => {
-    windowWidthCheck(breakPoint);
-  }
-  // Checks screen width on resize :
-  $(window).resize(() => {
-    windowWidthCheck(breakPoint);
-  });
-  
-  function windowWidthCheck(breakPoint) {
-    if ($(window).width() > breakPoint) {
-      displayDiv(projectToDisplay);
-    } else {
-      $('.center').children().css('display','flex');
-    }
-  }
 
   // ShowRoom behaviour
   // prev click
@@ -93,8 +74,8 @@ $(document).ready(() => {
     // Div
   function displayDiv(number) {
     let projectId = `#${createClassId(number)}`;
-    $(".project").css("display", "none");
-    $(projectId).css("display", "flex");
+    $(".project").removeClass("showroom__active");
+    $(projectId).addClass("showroom__active");
   }
 
   function createClassId(number) {

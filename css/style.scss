@@ -335,16 +335,21 @@ nav {
 }
 
 #project1 {
-  display: flex;
   background-image: $linear-showroom, url("../images/project1__img.png");
 }
 #project2 {
-  display: flex;
   background-image: $linear-showroom, url("../images/project2__img.png");
 }
 #project3 {
-  display: flex;
   background-image: $linear-showroom, url("../images/project3__img.png");
+}
+
+.showroom__active {
+  display: flex !important;
+}
+
+.showroom__inactive {
+  display: none !important;
 }
 
 .contact__container {
@@ -495,6 +500,7 @@ nav {
   .project {
     border-radius: 0px;
     box-shadow: none;
+    display: none;
   }
 
   .project1 {
