@@ -161,7 +161,14 @@ footer {
 
 .img__logo {
   margin: 0.5rem;
+}
+
+#github__logo {
   width: 2rem;
+}
+
+#linkedin__logo {
+width: 2.3rem;
 }
 
 .top__link {
@@ -363,6 +370,9 @@ nav {
   padding-top: 1rem;
   overflow: hidden;
   @include box-big();
+}
+#contact-logo__container {
+  display: flex;
 }
 
 
