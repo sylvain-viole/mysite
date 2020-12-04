@@ -1,5 +1,5 @@
 let projectToDisplay = 1;
-const numberOfProjects = 3;
+const numberOfProjects = 4;
 
 // EVENT BEHAVIOUR
 

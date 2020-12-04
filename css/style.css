@@ -313,6 +313,10 @@ nav {
   background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project3__img.png");
 }
 
+#project4 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project4__img.png");
+}
+
 .showroom__active {
   display: flex !important;
 }
@@ -416,8 +420,12 @@ nav {
   .project3 {
     background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project3__img.png");
   }
+  .project4 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project4__img.png");
+  }
   #project1,
   #project2,
+  #project4,
   #project3 {
     background-image: none;
   }
