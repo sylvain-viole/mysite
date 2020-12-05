@@ -63,6 +63,23 @@
 
   <body>
     <div class="container contrast">
+      <!-- MODAL -->
+      <div class="" id="mod__mask">
+        <div id="mod__container">
+          <div id="mod__head">
+            <span id="mod__close" class="close__modal">&times</span>
+          </div>
+          <div id="mod__content">
+            <h2 id="mod__title">
+            </h2> 
+            <div id="mod__paragraph">
+            </div>  
+          </div>
+          <div id="mod__footer">
+            <button id="mod__footer-btn" class="close__modal"></button>
+          </div>
+        </div>
+      </div>
       <header>
         <div id="header__title" class="header__inner">
           <h1>My name is Sylvain,</h1>
@@ -175,7 +192,7 @@
           <div id="showroom" class="project1">
             <div id="prev__showroom" class="side">&lt;</div>
             <div class="center">
-              <div id="project1" class="project showroom__active">
+              <div id="project1" class="project visible">
                 <div class="header__project">
                   <h2>#1 : Comps</h2>
                 </div>
@@ -353,7 +370,10 @@
       </div>
     </main>
     <div class="container contrast">
-      <footer>Copyright Sylvavio 2020</footer>
+      <footer>
+        <span class="small">&copy;  Sylvavio 2020 - </span>
+        <span class="small" id="mentions-legales" href="">mentions légales</span>
+      </footer>
     </div>
     <!-- JS -->
     <!-- JQUERY -->

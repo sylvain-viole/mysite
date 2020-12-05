@@ -4,6 +4,63 @@ const numberOfProjects = 4;
 // EVENT BEHAVIOUR
 
 $(document).ready(() => {
+  // MODAL
+  function modalText(event) {
+    let modalInnerText = new Object()
+    switch (event) {
+      case 'mentionsLegales':
+        modalInnerText.title = "Legal mentions";
+        modalInnerText.content = "This site is the property of Sylvain Viole, it is hosted on GITHUB.";
+        modalInnerText.btn = "Ok !";
+        break;
+        
+        default:
+          break;
+        }
+        return modalInnerText;
+      }
+      
+  function buildModalContent(object) {
+    $("#mod__title").text(object.title);
+    $('#mod__paragraph').text(object.content);
+    $("#mod__footer-btn").text(object.btn);
+    console.log(object.title);
+  }
+
+  function displayModal(event) {
+    let content = modalText(event);
+    buildModalContent(content);
+    let height = $(document).height();
+    $('#mod__mask').css('height', Math.round(height));
+    $('#mod__mask').addClass('visible');
+    $('#mod__container').addClass('slide-in-top');
+    setTimeout(() => {
+      cleanClasses()
+    }, 300);
+  }
+
+  function cleanClasses() {
+    $("#mod__container").removeClass("slide-out-top");
+    $("#mod__container").removeClass("slide-in-top");
+  };
+  
+  function closeModal() {
+    $("#mod__container").addClass("slide-out-top");
+    setTimeout(() => {
+      $('#mod__mask').removeClass('visible');
+      $('#mod__mask').css('height', '0');
+      cleanClasses();
+    }, 300);
+  }
+  
+  // event listener
+  $('#mentions-legales').on('click', () => {
+    displayModal('mentionsLegales');
+  
+  })
+  $('.close__modal').on('click', () => {
+    closeModal();
+  })
   // NAVBAR
 
   // Collpased navbar behaviour
@@ -74,8 +131,8 @@ $(document).ready(() => {
     // Div
   function displayDiv(number) {
     let projectId = `#${createClassId(number)}`;
-    $(".project").removeClass("showroom__active");
-    $(projectId).addClass("showroom__active");
+    $(".project").removeClass("visible");
+    $(projectId).addClass("visible");
   }
 
   function createClassId(number) {

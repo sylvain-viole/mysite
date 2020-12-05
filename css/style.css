@@ -36,6 +36,14 @@ html {
   display: none;
 }
 
+.visible {
+  display: flex !important;
+}
+
+.small {
+  font-size: 0.7rem;
+}
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
@@ -113,7 +121,6 @@ footer {
 
 footer {
   text-align: center;
-  font-size: 0.7rem;
   margin-top: 1rem;
 }
 
@@ -317,14 +324,6 @@ nav {
   background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project4__img.png");
 }
 
-.showroom__active {
-  display: flex !important;
-}
-
-.showroom__inactive {
-  display: none !important;
-}
-
 .contact__container {
   margin: 2rem auto;
   display: flex;
@@ -340,6 +339,62 @@ nav {
 
 #contact-logo__container {
   display: flex;
+}
+
+#mod__mask {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+
+#mod__container {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: white;
+  opacity: 1;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -25%);
+  width: 90%;
+  margin: auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+#mod__head {
+  text-align: right;
+}
+
+#mod__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+#mod__close {
+  font-size: 3rem;
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
+
+#mod__title {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+#mod__paragraph {
+  flex-grow: 1;
+}
+
+#mod__footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .bounce {
@@ -374,6 +429,14 @@ nav {
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.slide-in-top {
+  animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-out-top {
+  animation: slide-in-top 0.3s reverse cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-1000px);
@@ -392,6 +455,17 @@ nav {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translate(-50%, -1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -25%);
     opacity: 1;
   }
 }
