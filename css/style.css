@@ -117,11 +117,12 @@ section,
 
 footer {
   padding: 1rem;
-}
-
-footer {
   text-align: center;
   margin-top: 1rem;
+}
+
+#mentions-legales {
+  cursor: pointer;
 }
 
 #do {
