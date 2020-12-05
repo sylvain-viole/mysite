@@ -406,7 +406,8 @@ nav {
   left: 50%;
   top: 10%;
   transform: translate(-50%, -25%);
-  width: 90%;
+  width: 80%;
+  max-width: 800px;
   margin: auto;
   @include box-big();
 }
@@ -651,10 +652,14 @@ nav {
   .contact__container {
     width: 80%;
   }
+
 }
 
 @media screen and (min-width: 800px) {
   .contact__container {
     width: 40%;
+  }
+  #mod__container {
+    width: 60%;
   }
 }

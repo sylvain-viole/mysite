@@ -360,7 +360,8 @@ nav {
   left: 50%;
   top: 10%;
   transform: translate(-50%, -25%);
-  width: 90%;
+  width: 80%;
+  max-width: 800px;
   margin: auto;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
 }
@@ -519,6 +520,9 @@ nav {
 @media screen and (min-width: 800px) {
   .contact__container {
     width: 40%;
+  }
+  #mod__container {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */
