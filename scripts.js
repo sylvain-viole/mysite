@@ -31,8 +31,8 @@ $(document).ready(() => {
     let content = modalText(event);
     buildModalContent(content);
     let height = $(document).height();
+    $('#mod__modal').addClass('visible');
     $('#mod__mask').css('height', Math.round(height));
-    $('#mod__mask').addClass('visible');
     $('#mod__container').addClass('slide-in-top');
     setTimeout(() => {
       cleanClasses()
@@ -47,14 +47,14 @@ $(document).ready(() => {
   function closeModal() {
     $("#mod__container").addClass("slide-out-top");
     setTimeout(() => {
-      $('#mod__mask').removeClass('visible');
+      $('#mod__modal').removeClass('visible');
       $('#mod__mask').css('height', '0');
       cleanClasses();
     }, 300);
   }
   
   // event listener
-  $('#mentions-legales').on('click', () => {
+  $('.mod__openner').on('click', (e) => {
     displayModal('mentionsLegales');
   
   })
