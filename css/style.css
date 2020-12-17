@@ -310,19 +310,23 @@ nav {
 }
 
 #project1 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project1__img.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project1__img.png");
 }
 
 #project2 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project2__img.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project2__img.png");
 }
 
 #project3 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project3__img.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project3__img.png");
 }
 
 #project4 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project4__img.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project4__img.png");
+}
+
+#project5 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project5__img.png");
 }
 
 .contact__container {
@@ -493,21 +497,25 @@ nav {
     display: none;
   }
   .project1 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project1__img.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project1__img.png");
   }
   .project2 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project2__img.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project2__img.png");
   }
   .project3 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project3__img.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project3__img.png");
   }
   .project4 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.432)), url("../images/project4__img.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project4__img.png");
+  }
+  .project5 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project5__img.png");
   }
   #project1,
   #project2,
+  #project3,
   #project4,
-  #project3 {
+  #project5 {
     background-image: none;
   }
   .side {

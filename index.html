@@ -1,389 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
 
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow" />
 
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
-    <!-- CSS LINKS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+        <!-- CSS LINKS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Sylvain Viole, Developer</title>
+        <title>Sylvain Viole, Developer</title>
 
-    <meta property="og:title" content="Sylvain Viole, Developer" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://sylvavio.github.io/personnal_website/"
-    />
-    <meta
-      property="og:image"
-      content="https://sylvavio.github.io/personnal_website/images/avatar.jpg"
-    />
+        <meta property="og:title" content="Sylvain Viole, Developer" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://sylvavio.github.io/personnal_website/"
+        />
+        <meta
+            property="og:image"
+            content="https://sylvavio.github.io/personnal_website/images/avatar.jpg"
+        />
 
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:url"
-      content="https://sylvavio.github.io/personnal_website/"
-    />
-    <meta name="twitter:title" content="Sylvain Viole, developer." />
-    <meta
-      name="twitter:description"
-      content="I am Sylvain I am learning code and looking for an intership."
-    />
-    <meta
-      name="twitter:image"
-      content="https://sylvavio.github.io/personnal_website/images/avatar.jpg"
-    />
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:url"
+            content="https://sylvavio.github.io/personnal_website/"
+        />
+        <meta name="twitter:title" content="Sylvain Viole, developer." />
+        <meta
+            name="twitter:description"
+            content="I am Sylvain I am learning code and looking for an intership."
+        />
+        <meta
+            name="twitter:image"
+            content="https://sylvavio.github.io/personnal_website/images/avatar.jpg"
+        />
 
-    <meta
-      name="description"
-      content="My name is Sylvain, I am learning code and this is my personal website."
-    />
-    <meta
-      property="og:description"
-      content="My name is Sylvain, I am learning code and this is my personal website."
-    />
-    <meta
-      property="twitter:description"
-      content="My name is Sylvain, I am learning code and this is my personal website."
-    />
-  </head>
+        <meta
+            name="description"
+            content="My name is Sylvain, I am learning code and this is my personal website."
+        />
+        <meta
+            property="og:description"
+            content="My name is Sylvain, I am learning code and this is my personal website."
+        />
+        <meta
+            property="twitter:description"
+            content="My name is Sylvain, I am learning code and this is my personal website."
+        />
+    </head>
 
-  <body>
-    <div class="container contrast">
-      <!-- MODAL -->
-      <div id="mod__modal">
-        <div class="" id="mod__mask"></div>
-        <div id="mod__container">
-          <div id="mod__head">
-            <span id="mod__close" class="close__modal">&times</span>
-          </div>
-          <div id="mod__content">
-            <h2 id="mod__title">
-            </h2> 
-            <div id="mod__paragraph">
-            </div>  
-          </div>
-          <div id="mod__footer">
-            <button id="mod__footer-btn" class="close__modal"></button>
-          </div>
-        </div>
-      </div>
-      <header>
-        <div id="header__title" class="header__inner">
-          <h1>My name is Sylvain,</h1>
-          <h2>I dig coding.</h2>
-        </div>
-      </header>
-    </div>
-    <div class="container contrast">
-      <nav class="navbar" role="navigation">
-          <div class="navbar__collapsed-content">
-            <ul class="navbar__list">
-              <div class="navbar__toggler-icon">
-                <div id="menu__icon" class="bounce"></div>
-              </div>
-              <a href="#who__anchor"><li class="navbar__item">Who I am</li></a>
-              <a href="#what__anchor"
-                ><li class="navbar__item">What I do</li></a
-              >
-              <a href="#need__anchor"
-                ><li class="navbar__item">Contact me</li></a
-              >
-              <li class="navbar__item">
-              <a href="https://github.com/sylvavio" target="_blank"
-                >
-                  <img
-                    class="img__logo github__logo"
-                    src="./images/logo-github.png"
-                    alt="github__logo"
-                    srcset=""
-                  />
-                </a>
-              <a href="https://www.linkedin.com/in/sylvain-viole-b94888200/" target="_blank"
-                >
-                  <img
-                    class="img__logo linkedin__logo"
-                    src="./images/logo-linkedin.png"
-                    alt="linkedin__logo"  
-                    srcset=""
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-    </div>
-    <main>
-      <div class="container primary">
-        <span id="who__anchor" class="anchor"></span>
-        <section id="who" class="primary">
-          <h2>#Who I am</h2>
-          <p>I am a developer in the making, creative and passionate about coding.</p>
-          <p>
-            I've taken a deep dive in web developpement since september 2020
-            when I started a
-            <a
-              href="https://www.studi.fr/formation/code-developpement/graduate-developpeur-php-symfony"
-              target="_blank"
-              rel="noopener noreferrer"
-              >fullstack graduate with PHP/Symfony option</a
-            >. <br />
-          </p>
-
-          <p>
-            I also am a 39 years old ex-senior lighting designer, dad and
-            husband, living in Bordeaux, France.
-          </p>
-          <p>I love stupid jokes, as well as playing the piano.</p>
-          <p>I hate it when my house is not tidy and clean.</p>
-        </section>
-      </div>
-      <!-- TOP LINK -->
-      <div class="top__link">
-        <a href="#">
-          <button class="arrow">
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 16 16"
-              class="bi bi-chevron-double-up"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-              />
-            </svg></button
-        ></a>
-      </div>
-      <!-- EO TOP LINK -->
-      <div class="container primary">
-        <span id="what__anchor" class="anchor"></span>
-        <section id="do">
-          <h2>#What I Do</h2>
-          <p>
-            <strong>I can :</strong> HTML, CSS, SCSS, Bootstrap, Tailwind, JS, JQuery, GIT, VSC.<br />
-            <strong> I will : </strong>PHP, Symfony, SQL, Node, Express, MongoDB, React, Wordpress...
-            <br />
-            <small>(This list gets regular updates)</small>
-          </p>
-          <p>
-            I am eager to create things, so I find it very important to develop
-            projects in the meantime of my graduate.
-          </p>
-          <p>Here is a presentation of these learn-by-doing projects :</p>
-          <div id="showroom" class="project1">
-            <div id="prev__showroom" class="side">&lt;</div>
-            <div class="center">
-              <div id="project1" class="project visible">
-                <div class="header__project">
-                  <h2>#1 : Comps</h2>
+    <body>
+        <div class="container contrast">
+            <!-- MODAL -->
+            <div id="mod__modal">
+                <div class="" id="mod__mask"></div>
+                <div id="mod__container">
+                    <div id="mod__head">
+                        <span id="mod__close" class="close__modal">&times</span>
+                    </div>
+                    <div id="mod__content">
+                        <h2 id="mod__title"></h2>
+                        <div id="mod__paragraph"></div>
+                    </div>
+                    <div id="mod__footer">
+                        <button
+                            id="mod__footer-btn"
+                            class="close__modal"
+                        ></button>
+                    </div>
                 </div>
-                <div class="description__project">
-                  <p class="description">A repo of pre-build components</p>
-                  <p class="details">HTML, SCSS, JS, Jquery, GIT.</p>
-                </div>
-                <div class="button__container">
-                  <a
-                    href="https://github.com/sylvavio/myComponents"
-                    target="_blank"
-                    ><button>View repository</button>
-                  </a>
-                </div>
-              </div>
-              <div id="project2" class="project">
-                <div class="header__project">
-                  <h2>#2 : Huddle</h2>
-                </div>
-                <div class="description__project">
-                  <p class="description">Fake product website landing page.</p>
-                  <p class="details">HTML, SCSS, Vanilla JS.</p>
-                </div>
-                <div class="button__container">
-                  <a
-                    href="https://code-training.vercel.app/201104-CHALLENGE3/index.html"
-                    target="_blank"
-                    ><button>Check it</button>
-                  </a>
-                  <a
-                    href="https://github.com/sylvavio/code_training/tree/main/201104-CHALLENGE3"
-                    target="_blank"
-                    ><button>Browse code</button>
-                  </a>
-                </div>
-              </div>
-              <div id="project3" class="project">
-                <div class="header__project">
-                  <h2>#3 : SHFFLIZER</h2>
-                </div>
-                <div class="description__project">
-                  <p class="description">Frontend web-app.</p>
-                  <p class="details">Tailwind, postCSS, jQuery.</p>
-                </div>
-                <div class="button__container">
-                  <a
-                    href="https://sylvavio.github.io/shfflizer/"
-                    target="_blank"
-                    ><button>Check it</button>
-                  </a>
-                  <a
-                    href="https://github.com/sylvavio/shfflizer"
-                    target="_blank"
-                    ><button>Browse code</button>
-                  </a>
-                </div>
-              </div>
-              <div id="project4" class="project">
-                <div class="header__project">
-                  <h2>#4 : PLATE</h2>
-                </div>
-                <div class="description__project">
-                  <p class="description">Simple boiler plate.</p>
-                  <p class="details">PHP, HTML.</p>
-                </div>
-                <div class="button__container">
-                  <a
-                    href="https://github.com/sylvavio/plate"
-                    target="_blank"
-                    ><button>View Repository</button>
-                  </a>
-                </div>
-              </div>
             </div>
-            <div id="next__showroom" class="side">&gt;</div>
-          </div>
-          <p>
-            You can also checkout my
-            <a href="https://github.com/sylvavio" target="_blank">GITHUB</a>
-            where I follow and push projects.
-          </p>
-        </section>
-      </div>
-      <!-- TOP LINK -->
-      <div class="top__link">
-        <a href="#">
-          <button class="arrow">
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 16 16"
-              class="bi bi-chevron-double-up"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-              />
-            </svg></button
-        ></a>
-      </div>
-      <!-- EO TOP LINK -->
-      <div class="container primary">
-        <span class="anchor" id="need__anchor"></span>
-        <section id="need">
-          <h2># Contact me</h2>
-          <p>
-            As I am making my way in web developement, following courses and
-            creating things, my final aspiration is to get a real life job out
-            of it.
-          </p>
-          <p>
-            So first things first, I am right now looking for an
-            <mark> internship in a web company</mark>.
-          </p>
-          <p>You can <a href="./docs/cv_sylvain_viole_devweb.pdf">download my CV</a> (pdf).</p>
-          <p>Feel free to contact me :</p>
-          <div class="contact__container">
-            <p>
-              <strong>Sylvain Viole</strong>
-              <br />
-              2 rue Ferbos, 33800 Bordeaux
-              <br />
-              <a href="tel:+33664973324">+336 64 97 33 24</a>
-              <br />
-              <a href="mailto:sylvavio@gmail.com">sylvavio@gmail.com</a>
-            </p>
-            <div id="contact-logo__container">
-              <a href="https://github.com/sylvavio" target="_blank">
-                <img
-                  class="img__logo github__logo"
-                  src="./images/logo-github.png"
-                  alt="gitHub-logo"
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/sylvain-viole-b94888200/" target="_blank">
-                <img
-                  class="img__logo linkedin__logo"
-                  src="./images/logo-linkedin.png"
-                  alt="linkedin-logo"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
-        <!-- TOP LINK -->
-        <div class="top__link">
-          <a href="#">
-            <button class="arrow">
-              <svg
-                width="1em"
-                height="1em"
-                viewBox="0 0 16 16"
-                class="bi bi-chevron-double-up"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-                />
-              </svg></button
-          ></a>
+            <header>
+                <div id="header__title" class="header__inner">
+                    <h1>My name is Sylvain,</h1>
+                    <h2>I dig coding.</h2>
+                </div>
+            </header>
         </div>
-        <!-- EO TOP LINK -->
-      </div>
-    </main>
-    <div class="container contrast">
-      <footer>
-        <span class="small">&copy;  Sylvavio 2020 - </span>
-        <span class="small mod__openner" id="mentions-legales" href="">mentions légales</span>
-      </footer>
-    </div>
-    <!-- JS -->
-    <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <!-- OWN -->
-    <script src="./scripts.js"></script>
-  </body>
+        <div class="container contrast">
+            <nav class="navbar" role="navigation">
+                <div class="navbar__collapsed-content">
+                    <ul class="navbar__list">
+                        <div class="navbar__toggler-icon">
+                            <div id="menu__icon" class="bounce"></div>
+                        </div>
+                        <a href="#who__anchor"
+                            ><li class="navbar__item">Who I am</li></a
+                        >
+                        <a href="#what__anchor"
+                            ><li class="navbar__item">What I do</li></a
+                        >
+                        <a href="#need__anchor"
+                            ><li class="navbar__item">Contact me</li></a
+                        >
+                        <li class="navbar__item">
+                            <a
+                                href="https://github.com/sylvavio"
+                                target="_blank"
+                            >
+                                <img
+                                    class="img__logo github__logo"
+                                    src="./images/logo-github.png"
+                                    alt="github__logo"
+                                    srcset=""
+                                />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/sylvain-viole-b94888200/"
+                                target="_blank"
+                            >
+                                <img
+                                    class="img__logo linkedin__logo"
+                                    src="./images/logo-linkedin.png"
+                                    alt="linkedin__logo"
+                                    srcset=""
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <div class="container primary">
+                <span id="who__anchor" class="anchor"></span>
+                <section id="who" class="primary">
+                    <h2>#Who I am</h2>
+                    <p>
+                        I am a developer in the making, creative and passionate
+                        about coding.
+                    </p>
+                    <p>
+                        I've taken a deep dive in web developpement since
+                        september 2020 when I started a
+                        <a
+                            href="https://www.studi.fr/formation/code-developpement/graduate-developpeur-php-symfony"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >fullstack graduate with PHP/Symfony option</a
+                        >. <br />
+                    </p>
+
+                    <p>
+                        I also am a 39 years old ex-senior lighting designer,
+                        dad and husband, living in Bordeaux, France.
+                    </p>
+                    <p>I love stupid jokes, as well as playing the piano.</p>
+                    <p>I hate it when my house is not tidy and clean.</p>
+                </section>
+            </div>
+            <!-- TOP LINK -->
+            <div class="top__link">
+                <a href="#">
+                    <button class="arrow">
+                        <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-chevron-double-up"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                            />
+                        </svg></button
+                ></a>
+            </div>
+            <!-- EO TOP LINK -->
+            <div class="container primary">
+                <span id="what__anchor" class="anchor"></span>
+                <section id="do">
+                    <h2>#What I Do</h2>
+                    <p>
+                        <strong>I can :</strong> HTML, CSS, SCSS, Bootstrap,
+                        Tailwind, JS, JQuery, GIT, VSC.<br />
+                        <strong> I will : </strong>PHP, Symfony, SQL, Node,
+                        Express, MongoDB, React, Wordpress...
+                        <br />
+                        <small>(This list gets regular updates)</small>
+                    </p>
+                    <p>
+                        I am eager to create things, so I find it very important
+                        to develop projects in the meantime of my graduate.
+                    </p>
+                    <p>
+                        Here is a presentation of these learn-by-doing projects
+                        :
+                    </p>
+                    <div id="showroom" class="project1">
+                        <div id="prev__showroom" class="side">&lt;</div>
+                        <div class="center">
+                            <div id="project1" class="project visible">
+                                <div class="header__project">
+                                    <h2>#1 : Colr</h2>
+                                </div>
+                                <div class="description__project">
+                                    <p class="description">
+                                        IDE like JS code formatter.
+                                    </p>
+                                    <p class="details">
+                                        Javascript.
+                                    </p>
+                                </div>
+                                <div class="button__container">
+                                  <a
+                                  href="https://github.com/sylvavio/colr"
+                                  target="_blank"
+                                  ><button>Check it</button>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="project2" class="project">
+                                <div class="header__project">
+                                    <h2>#2 : SHFFLIZER</h2>
+                                </div>
+                                <div class="description__project">
+                                    <p class="description">Frontend web-app.</p>
+                                    <p class="details">
+                                        Tailwind, postCSS, jQuery.
+                                    </p>
+                                </div>
+                                <div class="button__container">
+                                    <a
+                                        href="https://sylvavio.github.io/shfflizer/"
+                                        target="_blank"
+                                        ><button>Check it</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/sylvavio/shfflizer"
+                                        target="_blank"
+                                        ><button>Browse code</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="project3" class="project">
+                                <div class="header__project">
+                                    <h2>#3 : Comps</h2>
+                                </div>
+                                <div class="description__project">
+                                    <p class="description">
+                                        A repo of pre-build components
+                                    </p>
+                                    <p class="details">
+                                        HTML, SCSS, JS, Jquery, GIT.
+                                    </p>
+                                </div>
+                                <div class="button__container">
+                                    <a
+                                        href="https://github.com/sylvavio/myComponents"
+                                        target="_blank"
+                                        ><button>View repository</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="project4" class="project">
+                              <div class="header__project">
+                                <h2>#4 : Huddle</h2>
+                                </div>
+                                <div class="description__project">
+                                    <p class="description">
+                                        Fake product website landing page.
+                                    </p>
+                                    <p class="details">
+                                        HTML, SCSS, Vanilla JS.
+                                    </p>
+                                </div>
+                                <div class="button__container">
+                                    <a
+                                        href="https://code-training.vercel.app/201104-CHALLENGE3/index.html"
+                                        target="_blank"
+                                        ><button>Check it</button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/sylvavio/code_training/tree/main/201104-CHALLENGE3"
+                                        target="_blank"
+                                        ><button>Browse code</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="project5" class="project">
+                                <div class="header__project">
+                                    <h2>#5 : PLATE</h2>
+                                </div>
+                                <div class="description__project">
+                                    <p class="description">
+                                        Simple boiler plate.
+                                    </p>
+                                    <p class="details">PHP, HTML.</p>
+                                </div>
+                                <div class="button__container">
+                                    <a
+                                        href="https://github.com/sylvavio/plate"
+                                        target="_blank"
+                                        ><button>View Repository</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="next__showroom" class="side">&gt;</div>
+                    </div>
+                    <p>
+                        You can also checkout my
+                        <a href="https://github.com/sylvavio" target="_blank"
+                            >GITHUB</a
+                        >
+                        where I follow and push projects.
+                    </p>
+                </section>
+            </div>
+            <!-- TOP LINK -->
+            <div class="top__link">
+                <a href="#">
+                    <button class="arrow">
+                        <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-chevron-double-up"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                            />
+                        </svg></button
+                ></a>
+            </div>
+            <!-- EO TOP LINK -->
+            <div class="container primary">
+                <span class="anchor" id="need__anchor"></span>
+                <section id="need">
+                    <h2># Contact me</h2>
+                    <p>
+                        As I am making my way in web developement, following
+                        courses and creating things, my final aspiration is to
+                        get a real life job out of it.
+                    </p>
+                    <p>
+                        So first things first, I am right now looking for an
+                        <mark> internship in a web company</mark>.
+                    </p>
+                    <p>
+                        You can
+                        <a href="./docs/cv_sylvain_viole_devweb.pdf"
+                            >download my CV</a
+                        >
+                        (pdf).
+                    </p>
+                    <p>Feel free to contact me :</p>
+                    <div class="contact__container">
+                        <p>
+                            <strong>Sylvain Viole</strong>
+                            <br />
+                            2 rue Ferbos, 33800 Bordeaux
+                            <br />
+                            <a href="tel:+33664973324">+336 64 97 33 24</a>
+                            <br />
+                            <a href="mailto:sylvavio@gmail.com"
+                                >sylvavio@gmail.com</a
+                            >
+                        </p>
+                        <div id="contact-logo__container">
+                            <a
+                                href="https://github.com/sylvavio"
+                                target="_blank"
+                            >
+                                <img
+                                    class="img__logo github__logo"
+                                    src="./images/logo-github.png"
+                                    alt="gitHub-logo"
+                                />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/sylvain-viole-b94888200/"
+                                target="_blank"
+                            >
+                                <img
+                                    class="img__logo linkedin__logo"
+                                    src="./images/logo-linkedin.png"
+                                    alt="linkedin-logo"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- TOP LINK -->
+                <div class="top__link">
+                    <a href="#">
+                        <button class="arrow">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 16 16"
+                                class="bi bi-chevron-double-up"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                                />
+                            </svg></button
+                    ></a>
+                </div>
+                <!-- EO TOP LINK -->
+            </div>
+        </main>
+        <div class="container contrast">
+            <footer>
+                <span class="small">&copy; Sylvavio 2020 - </span>
+                <span class="small mod__openner" id="mentions-legales" href=""
+                    >mentions légales</span
+                >
+            </footer>
+        </div>
+        <!-- JS -->
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+        ></script>
+        <!-- OWN -->
+        <script src="./scripts.js"></script>
+    </body>
 </html>

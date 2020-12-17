@@ -16,8 +16,8 @@ $dark: rgba(
 );
 
 $linear-showroom: linear-gradient(
-  rgba(255, 255, 255, 0.76),
-  rgba(255, 255, 255, 0.432)
+  rgba(255, 255, 255, 0.80),
+  rgba(255, 255, 255, 0.70)
   );
   
 
@@ -367,6 +367,9 @@ nav {
 #project4 {
   background-image: $linear-showroom, url("../images/project4__img.png");
 }
+#project5 {
+  background-image: $linear-showroom, url("../images/project5__img.png");
+}
 
 
 
@@ -637,11 +640,15 @@ nav {
   .project4 {
     background-image: $linear-showroom, url("../images/project4__img.png");
   }
+  .project5 {
+    background-image: $linear-showroom, url("../images/project5__img.png");
+  }
 
   #project1,
   #project2,
+  #project3,
   #project4,
-  #project3 {
+  #project5 {
     background-image: none;
   }
 
