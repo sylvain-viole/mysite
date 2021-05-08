@@ -329,6 +329,10 @@ nav {
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project5__img.png");
 }
 
+#project6 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url("../images/project6__img.png");
+}
+
 .contact__container {
   margin: 2rem auto;
   display: flex;
