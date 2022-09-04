@@ -1,4 +1,4 @@
 # mysite
-Hello, I am Sylvain, I am learning Agile QA Testing / Automation.
+Hello, I am Sylvain, Agile QA automation engineer.
 
 This repo hosts my personal website.
