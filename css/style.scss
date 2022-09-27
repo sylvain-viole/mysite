@@ -16,80 +16,76 @@ $dark: rgba(
 );
 
 $linear-showroom: linear-gradient(
-  rgba(255, 255, 255, 0.80),
-  rgba(255, 255, 255, 0.70)
-  );
-  
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0.7)
+);
 
-  @mixin box-big {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
-  }
-  
-  $base-font: 18px;
-  
-  @mixin hover {
-    background-color: $primary;
-    border-radius: 0 15px 0 15px;
-  }
-  
-  // init
-  
-  input,
-  textarea,
-  button,
-  select,
-  a {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  * {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: $base-font;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-  
-  .primary {
-    background-color: $white;
-  }
-  
-  .contrast {
-    background-color: $primary;
-  }
-  
-  .navbar__list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .navbar__toggler-icon {
-    display: none;
-  }
+@mixin box-big {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+}
 
-  // utility
+$base-font: 18px;
 
-  .visible {
+@mixin hover {
+  background-color: $primary;
+  border-radius: 0 15px 0 15px;
+}
+
+// init
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: $base-font;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.primary {
+  background-color: $white;
+}
+
+.contrast {
+  background-color: $primary;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__toggler-icon {
+  display: none;
+}
+
+// utility
+
+.visible {
   display: flex !important;
-  }
+}
 
-  
-  .small {
-    font-size: 0.7rem;
-  }
-  
-  
-  
-  h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.small {
+  font-size: 0.7rem;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -181,8 +177,12 @@ footer {
   width: 2rem;
 }
 
+.medium__logo {
+  width: 2.3rem;
+}
+
 .linkedin__logo {
-width: 2.3rem;
+  width: 2.4rem;
 }
 
 .top__link {
@@ -283,6 +283,10 @@ nav {
     color: $primary;
   }
 
+  .company {
+    display: block;
+  }
+
   p {
     display: inline-block;
     margin: 0.5rem 0;
@@ -336,6 +340,10 @@ nav {
   @include box-big();
 }
 
+.description__project > .company {
+  color: red;
+}
+
 .description__project {
   flex-grow: 1;
 }
@@ -374,8 +382,6 @@ nav {
   background-image: $linear-showroom, url("../images/project6__img.png");
 }
 
-
-
 .contact__container {
   margin: 2rem auto;
   display: flex;
@@ -395,13 +401,13 @@ nav {
 // Modal
 
 #mod__modal {
-  display : none;
+  display: none;
 }
 
 #mod__mask {
-  display : flex;
+  display: flex;
   position: absolute;
-  width : 100%;
+  width: 100%;
   background: rgba($color: #000000, $alpha: 0.4);
   z-index: 51;
 }
@@ -425,37 +431,36 @@ nav {
 
 #mod__head {
   text-align: right;
- }
+}
 
- #mod__content {
-   height: 100%;
-   display : flex;
-   flex-direction : column;
-   gap: 1rem;
-   text-align: center;
- }
+#mod__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
 
- #mod__close {
-   font-size : 3rem;
-   margin-right: 0.7rem;
-   cursor: pointer;
- }
+#mod__close {
+  font-size: 3rem;
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
 
- #mod__title {
-   margin-top: 0rem;
-   margin-bottom: 0.5rem;
- }
+#mod__title {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
 
- #mod__paragraph {
-   flex-grow : 1;
- }
+#mod__paragraph {
+  flex-grow: 1;
+}
 
- #mod__footer {
-   margin-top: 1rem;
-   margin-bottom: 1rem;
-   text-align: center;
- }
-
+#mod__footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 // ANIMATION
 
@@ -525,13 +530,12 @@ nav {
 }
 
 .slide-in-top {
-  -webkit-animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  -webkit-animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slide-out-top {
-  -webkit-animation: slide-in-top 0.3s reverse cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  -webkit-animation: slide-in-top 0.3s reverse
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.3s reverse cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -667,7 +671,6 @@ nav {
   .contact__container {
     width: 80%;
   }
-
 }
 
 @media screen and (min-width: 800px) {
