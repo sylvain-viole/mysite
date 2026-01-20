@@ -1,0 +1,29 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "JE MODIFIE",
+  "main": "scripts.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvain-viole/mysite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylvain-viole/mysite/issues"
+  },
+  "homepage": "https://github.com/sylvain-viole/mysite#readme",
+  "dependencies": {
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
